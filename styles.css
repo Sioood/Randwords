@@ -41,7 +41,7 @@ img {
 }
 
 .card {
-  width: 40vw;
+  width: 40vh;
   height: 60vh;
   display: flex;
   flex-direction: column;
