@@ -93,6 +93,7 @@ h3 {
   font-family: "Rubik", sans-serif;
   font-size: 4vh;
   text-align: center;
+  transform: rotateY(180deg);
 }
 
 h3:nth-child(1) {
@@ -119,7 +120,7 @@ button:active {
 }
 
 a:nth-child(3) {
-  padding: 4vh 0 0 0;
+  margin: 4vh 0 0 0;
   font-family: "Rubik", sans-serif;
   font-size: 2vh;
   text-decoration: underline;
