@@ -216,7 +216,7 @@ h3:nth-child(1) {
 
   .wrap-counter {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .counter {
