@@ -23,6 +23,7 @@ body {
     #cf556c 78%,
     #b12a5b 100%
   );
+  overflow-x: hidden;
 }
 
 .wrap {
@@ -57,20 +58,42 @@ h2 {
   font-size: 2vh;
 }
 
-.rules-card{
-    width: 40vh;
-    height: 90vh;
-    padding: 2vw;
-    margin: 0 0 5vh 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(145, 80, 80, 0.37);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+.rules-card {
+  width: 40vh;
+  padding: 4vw;
+  margin: 0 0 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: right;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(145, 80, 80, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 4vh;
+  margin: 0 0 1vh 0;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 2vh;
+  text-align: justify;
+}
+
+p:nth-child(2) {
+  margin: 0 0 4vh 0;
+}
+
+a:nth-last-child(1) {
+  font-family: "Rubik", sans-serif;
+  font-size: 2vh;
+  padding: 0 0 2vh 0;
+  text-decoration: underline;
 }

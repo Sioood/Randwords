@@ -2,10 +2,15 @@
 
 const letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+const color = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
+
 function randomizeLetter() {
   let randomizeLetter = Math.floor(Math.random() * letter.length);
   randomLetterText = document.querySelector("#letter");
   randomLetterText.innerText = `${letter[randomizeLetter]}`;
+
+  let randomizeColor = Math.floor(Math.random() * color.length);
+  randomLetterText.style.color = `${color[randomizeColor]}`;
 }
 
 const theme = [
@@ -14,7 +19,7 @@ const theme = [
   "Objet",
   "Fruit",
   "Célébrité",
-  "Film",
+ "Film",
   "Musique",
   "Métier",
   "Personnage Fictif",
