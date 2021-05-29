@@ -106,13 +106,13 @@ const transform = ["rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0
 
 function randomizeTransform() {
   let randomizeTransform = Math.floor(Math.random() * transform.length);
-  let randomTransform = document.querySelector("#theme");
+  let randomTransform = document.querySelector("#card");
   randomTransform.style.transform = `${transform[randomizeTransform]}`;
 
-  let randomTransform2 = document.querySelector("#theme2");
+  let randomTransform2 = document.querySelector("#card1");
   randomTransform2.style.transform = `${transform[randomizeTransform]}`;
 
-  let randomTransform3 = document.querySelector("#theme3");
+  let randomTransform3 = document.querySelector("#card2");
   randomTransform3.style.transform = `${transform[randomizeTransform]}`;
 };
 
