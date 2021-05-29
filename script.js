@@ -6,7 +6,7 @@ const color = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
 
 function randomizeLetter() {
   let randomizeLetter = Math.floor(Math.random() * letter.length);
-  randomLetterText = document.querySelector("#letter");
+  let randomLetterText = document.querySelector("#letter");
   randomLetterText.innerText = `${letter[randomizeLetter]}`;
 
   let randomizeColor = Math.floor(Math.random() * color.length);
@@ -28,8 +28,8 @@ const theme = [
 
 const randomizeTheme = () => {
   let randomizeTheme = Math.floor(Math.random() * theme.length);
-  randomNumberText = document.querySelector("#theme");
-  randomNumberText.innerText = `${theme[randomizeTheme]}`;
+  let randomWord = document.querySelector("#theme");
+  randomWord.innerText = `${theme[randomizeTheme]}`;
 };
 
 //Card 2 Random letter and theme
@@ -40,7 +40,7 @@ const color2 = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
 
 function randomizeLetter2() {
   let randomizeLetter2 = Math.floor(Math.random() * letter2.length);
-  randomLetterText2 = document.querySelector("#letter2");
+  let randomLetterText2 = document.querySelector("#letter2");
   randomLetterText2.innerText = `${letter2[randomizeLetter2]}`;
 
   let randomizeColor2 = Math.floor(Math.random() * color2.length);
@@ -62,9 +62,22 @@ const theme2 = [
 
 const randomizeTheme2 = () => {
   let randomizeTheme2 = Math.floor(Math.random() * theme2.length);
-  randomNumberText2 = document.querySelector("#theme2");
-  randomNumberText2.innerText = `${theme2[randomizeTheme2]}`;
+  let randomWord2 = document.querySelector("#theme2");
+  randomWord2.innerText = `${theme2[randomizeTheme2]}`;
 };
+
+// cards transform
+
+const transform = ["rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(180deg)"];
+
+function randomizeTransform() {
+  let randomizeTransform = Math.floor(Math.random() * transform.length);
+  let randomTransform = document.querySelector("#theme");
+  randomTransform.style.transform = `${transform[randomizeTransform]}`;
+
+  let randomTransform2 = document.querySelector("#theme2");
+  randomTransform2.style.transform = `${transform[randomizeTransform]}`;
+}
 
 //Button Click Functions
 
@@ -81,6 +94,10 @@ randomizeLetter2();
 
 btn.addEventListener("click", randomizeTheme2);
 randomizeTheme2();
+
+btn.addEventListener("click", randomizeTransform);
+randomizeTransform();
+
 
 // const randomLetter = Math.floor(Math.random() * 27);
 
