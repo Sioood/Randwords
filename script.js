@@ -82,16 +82,21 @@ function randomizeLetter3() {
 }
 
 const theme3 = [
-  "Ville",
-  "Pays",
-  "Objet",
-  "Fruit",
+  "Animal",
   "Célébrité",
-  "Film",
-  "Musique",
+  "Couleur",
+  "Film / Série",
+  "Fruit / Légume",
   "Métier",
-  "Personnage Fictif",
   "Monument",
+  "Musique",
+  "Objet",
+  "Pays",
+  "Personnage Fictif",
+  "Plat",
+  "Prénom",
+  "Sport",
+  "Ville",
 ];
 
 const randomizeTheme3 = () => {
