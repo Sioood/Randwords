@@ -114,7 +114,7 @@ function randomizeTransform() {
 
   let randomTransform3 = document.querySelector("#theme3");
   randomTransform3.style.transform = `${transform[randomizeTransform]}`;
-}
+};
 
 //Button Click Functions
 
