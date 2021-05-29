@@ -6,11 +6,11 @@ const color = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
 
 function randomizeLetter() {
   let randomizeLetter = Math.floor(Math.random() * letter.length);
-  let randomLetterText = document.querySelector("#letter");
-  randomLetterText.innerText = `${letter[randomizeLetter]}`;
+  let randomLetter = document.querySelector("#letter");
+  randomLetter.innerText = `${letter[randomizeLetter]}`;
 
   let randomizeColor = Math.floor(Math.random() * color.length);
-  randomLetterText.style.color = `${color[randomizeColor]}`;
+  randomLetter.style.color = `${color[randomizeColor]}`;
 }
 
 const theme = [
@@ -40,11 +40,11 @@ const color2 = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
 
 function randomizeLetter2() {
   let randomizeLetter2 = Math.floor(Math.random() * letter2.length);
-  let randomLetterText2 = document.querySelector("#letter2");
-  randomLetterText2.innerText = `${letter2[randomizeLetter2]}`;
+  let randomLetter2 = document.querySelector("#letter2");
+  randomLetter2.innerText = `${letter2[randomizeLetter2]}`;
 
   let randomizeColor2 = Math.floor(Math.random() * color2.length);
-  randomLetterText2.style.color = `${color2[randomizeColor2]}`;
+  randomLetter2.style.color = `${color2[randomizeColor2]}`;
 }
 
 const theme2 = [
@@ -66,9 +66,43 @@ const randomizeTheme2 = () => {
   randomWord2.innerText = `${theme2[randomizeTheme2]}`;
 };
 
+//Card 3 Random letter and theme
+
+const letter3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const color3 = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
+
+function randomizeLetter3() {
+  let randomizeLetter3 = Math.floor(Math.random() * letter3.length);
+  let randomLetter3 = document.querySelector("#letter3");
+  randomLetter3.innerText = `${letter3[randomizeLetter3]}`;
+
+  let randomizeColor3 = Math.floor(Math.random() * color3.length);
+  randomLetter3.style.color = `${color3[randomizeColor3]}`;
+}
+
+const theme3 = [
+  "Ville",
+  "Pays",
+  "Objet",
+  "Fruit",
+  "Célébrité",
+  "Film",
+  "Musique",
+  "Métier",
+  "Personnage Fictif",
+  "Monument",
+];
+
+const randomizeTheme3 = () => {
+  let randomizeTheme3 = Math.floor(Math.random() * theme3.length);
+  let randomWord3 = document.querySelector("#theme3");
+  randomWord3.innerText = `${theme3[randomizeTheme3]}`;
+};
+
 // cards transform
 
-const transform = ["rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(180deg)"];
+const transform = ["rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(180deg)"];
 
 function randomizeTransform() {
   let randomizeTransform = Math.floor(Math.random() * transform.length);
@@ -77,6 +111,9 @@ function randomizeTransform() {
 
   let randomTransform2 = document.querySelector("#theme2");
   randomTransform2.style.transform = `${transform[randomizeTransform]}`;
+
+  let randomTransform3 = document.querySelector("#theme3");
+  randomTransform3.style.transform = `${transform[randomizeTransform]}`;
 }
 
 //Button Click Functions
@@ -94,6 +131,13 @@ randomizeLetter2();
 
 btn.addEventListener("click", randomizeTheme2);
 randomizeTheme2();
+
+btn.addEventListener("click", randomizeLetter3);
+randomizeLetter3();
+
+btn.addEventListener("click", randomizeTheme3);
+randomizeTheme3();
+
 
 btn.addEventListener("click", randomizeTransform);
 randomizeTransform();
