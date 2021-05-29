@@ -27,15 +27,19 @@ const randomizeTheme = () => {
   randomNumberText.innerText = `${theme[randomizeTheme]}`;
 };
 
-
-//Card 2
+//Card 2 Random letter and theme
 
 const letter2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const color2 = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
 
 function randomizeLetter2() {
   let randomizeLetter2 = Math.floor(Math.random() * letter2.length);
   randomLetterText2 = document.querySelector("#letter2");
   randomLetterText2.innerText = `${letter2[randomizeLetter2]}`;
+
+  let randomizeColor2 = Math.floor(Math.random() * color2.length);
+  randomLetterText2.style.color = `${color2[randomizeColor2]}`;
 }
 
 const theme2 = [
