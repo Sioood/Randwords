@@ -15,11 +15,13 @@ function randomizeLetter() {
 
 const theme = [
   "Animal",
+  "Boisson",
   "Célébrité",
   "Couleur",
   "De couleur rouge",
   "De couleur verte",
   "De couleur bleue",
+  "Dessert",
   "Film / Série",
   "Fruit / Légume",
   "Jeu",
