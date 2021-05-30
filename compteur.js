@@ -104,5 +104,47 @@ function plus4() {
 
 btnPlus4.addEventListener("click", plus4);
 
+// compteur 6
+
+const btnMoins5 = document.querySelector("#moins5");
+const btnPlus5 = document.querySelector("#plus5");
+let btnResult5 = document.querySelector("#result5");
+let counter5 = parseInt(btnResult5.innerText);
+
+function moins5() {
+  counter5--;
+  btnResult5.innerText = counter5;
+}
+
+btnMoins5.addEventListener("click", moins5);
+
+function plus5() {
+  counter5++;
+  btnResult5.innerText = counter5;
+}
+
+btnPlus5.addEventListener("click", plus5);
+
+// compteur 7
+
+const btnMoins6 = document.querySelector("#moins6");
+const btnPlus6 = document.querySelector("#plus6");
+let btnResult6 = document.querySelector("#result6");
+let counter6 = parseInt(btnResult6.innerText);
+
+function moins6() {
+  counter6--;
+  btnResult6.innerText = counter6;
+}
+
+btnMoins6.addEventListener("click", moins6);
+
+function plus6() {
+  counter6++;
+  btnResult6.innerText = counter6;
+}
+
+btnPlus6.addEventListener("click", plus6);
+
 // btnMoins.addEventListener("click", randomizeLetter);
 // randomizeLetter();

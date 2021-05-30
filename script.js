@@ -2,7 +2,7 @@
 
 const letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-const color = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
+const color = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e", "#32a852"];
 
 function randomizeLetter() {
   let randomizeLetter = Math.floor(Math.random() * letter.length);
@@ -14,16 +14,28 @@ function randomizeLetter() {
 }
 
 const theme = [
-  "Ville",
-  "Pays",
-  "Objet",
-  "Fruit",
+  "Animal",
   "Célébrité",
- "Film",
-  "Musique",
+  "Couleur",
+  "De couleur rouge",
+  "De couleur verte",
+  "De couleur bleue",
+  "Film / Série",
+  "Fruit / Légume",
+  "Jeu",
+  "Marque",
   "Métier",
-  "Personnage Fictif",
   "Monument",
+  "Mot de 5 lettres",
+  "Mot anglais",
+  "Chanteur / Groupe",
+  "Objet",
+  "Pays",
+  "Personnage Fictif",
+  "Plat",
+  "Prénom",
+  "Sport",
+  "Ville",
 ];
 
 const randomizeTheme = () => {
@@ -34,9 +46,9 @@ const randomizeTheme = () => {
 
 //Card 2 Random letter and theme
 
-const letter2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letter2 = letter;
 
-const color2 = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
+const color2 = color;
 
 function randomizeLetter2() {
   let randomizeLetter2 = Math.floor(Math.random() * letter2.length);
@@ -47,18 +59,7 @@ function randomizeLetter2() {
   randomLetter2.style.color = `${color2[randomizeColor2]}`;
 }
 
-const theme2 = [
-  "Ville",
-  "Pays",
-  "Objet",
-  "Fruit",
-  "Célébrité",
-  "Film",
-  "Musique",
-  "Métier",
-  "Personnage Fictif",
-  "Monument",
-];
+const theme2 = theme ;
 
 const randomizeTheme2 = () => {
   let randomizeTheme2 = Math.floor(Math.random() * theme2.length);
@@ -68,9 +69,9 @@ const randomizeTheme2 = () => {
 
 //Card 3 Random letter and theme
 
-const letter3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letter3 = letter;
 
-const color3 = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e"];
+const color3 = color;
 
 function randomizeLetter3() {
   let randomizeLetter3 = Math.floor(Math.random() * letter3.length);
@@ -81,23 +82,7 @@ function randomizeLetter3() {
   randomLetter3.style.color = `${color3[randomizeColor3]}`;
 }
 
-const theme3 = [
-  "Animal",
-  "Célébrité",
-  "Couleur",
-  "Film / Série",
-  "Fruit / Légume",
-  "Métier",
-  "Monument",
-  "Musique",
-  "Objet",
-  "Pays",
-  "Personnage Fictif",
-  "Plat",
-  "Prénom",
-  "Sport",
-  "Ville",
-];
+const theme3 = theme ;
 
 const randomizeTheme3 = () => {
   let randomizeTheme3 = Math.floor(Math.random() * theme3.length);
