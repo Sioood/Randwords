@@ -196,7 +196,7 @@ h3:nth-child(1) {
 
   .card {
     width: 80vw;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     align-items: center;
