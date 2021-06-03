@@ -96,4 +96,8 @@ a:nth-last-child(1) {
   .rules-card {
     width: 40vh;
   }
+ 
+  p {
+  font-size: 1.95vh;
+}
 }
