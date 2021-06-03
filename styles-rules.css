@@ -32,7 +32,7 @@ header {
 
 .rules-card {
   position: fixed;
-  width: 40vh;
+  width: 50vh;
   padding: 3vh;
   margin: 5vh 0 5vh 0;
   display: flex;
@@ -90,4 +90,10 @@ a:nth-last-child(1) {
   font-size: 2vh;
   margin: 0 0 2vh 0;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px){
+  .rules-card {
+    width: 40vh;
+  }
 }
