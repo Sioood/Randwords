@@ -2,7 +2,15 @@
 
 const letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-const color = ["white", "white", "white", "white", "#e63b3b", "#1b1c1e", "#32a852"];
+const color = [
+  "white",
+  "white",
+  "white",
+  "white",
+  "#e63b3b",
+  "#1b1c1e",
+  "#32a852",
+];
 
 function randomizeLetter() {
   let randomizeLetter = Math.floor(Math.random() * letter.length);
@@ -61,7 +69,7 @@ function randomizeLetter2() {
   randomLetter2.style.color = `${color2[randomizeColor2]}`;
 }
 
-const theme2 = theme ;
+const theme2 = theme;
 
 const randomizeTheme2 = () => {
   let randomizeTheme2 = Math.floor(Math.random() * theme2.length);
@@ -84,7 +92,7 @@ function randomizeLetter3() {
   randomLetter3.style.color = `${color3[randomizeColor3]}`;
 }
 
-const theme3 = theme ;
+const theme3 = theme;
 
 const randomizeTheme3 = () => {
   let randomizeTheme3 = Math.floor(Math.random() * theme3.length);
@@ -94,7 +102,15 @@ const randomizeTheme3 = () => {
 
 // cards transform
 
-const transform = ["rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(0deg)", "rotateY(180deg)"];
+const transform = [
+  "rotateY(0deg)",
+  "rotateY(0deg)",
+  "rotateY(0deg)",
+  "rotateY(0deg)",
+  "rotateY(0deg)",
+  "rotateY(0deg)",
+  "rotateY(180deg)",
+];
 
 function randomizeTransform() {
   let randomizeTransform = Math.floor(Math.random() * transform.length);
@@ -106,7 +122,7 @@ function randomizeTransform() {
 
   let randomTransform3 = document.querySelector("#card2");
   randomTransform3.style.transform = `${transform[randomizeTransform]}`;
-};
+}
 
 //Button Click Functions
 
@@ -130,18 +146,17 @@ randomizeLetter3();
 btn.addEventListener("click", randomizeTheme3);
 randomizeTheme3();
 
-
 btn.addEventListener("click", randomizeTransform);
 randomizeTransform();
 
 // Close rules pop up
 
 function closeRules() {
-let selectRules = document.querySelector(".rules-card");
-selectRules.style.display = "none";
+  let selectRules = document.querySelector(".rules-card");
+  selectRules.style.display = "none";
 }
 
-const crossBtn = document.querySelector(".cross")
+const crossBtn = document.querySelector(".cross");
 
 crossBtn.addEventListener("click", closeRules);
 
@@ -150,12 +165,11 @@ crossBtn.addEventListener("click", closeRules);
 function OpenRules() {
   let selectRules = document.querySelector(".rules-card");
   selectRules.style.display = "initial";
-  }
-  
-  const rulesBtn = document.querySelector(".rules-btn")
-  
-  rulesBtn.addEventListener("click", OpenRules);
+}
 
+const rulesBtn = document.querySelector(".rules-btn");
+
+rulesBtn.addEventListener("click", OpenRules);
 
 // const randomLetter = Math.floor(Math.random() * 27);
 

@@ -152,6 +152,7 @@ h3:nth-child(1) {
 
 .wrap-all-counters {
   width: 100vw;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
