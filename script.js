@@ -1,3 +1,39 @@
+const btn = document.querySelector("button");
+
+// Close rules pop up
+
+function closeRules() {
+  let selectRules = document.querySelector(".rules-card");
+  selectRules.style.display = "none";
+}
+
+const crossBtn = document.querySelector(".cross");
+
+crossBtn.addEventListener("click", closeRules);
+
+//open rules
+
+function OpenRules() {
+  let selectRules = document.querySelector(".rules-card");
+  selectRules.style.display = "initial";
+}
+
+const rulesBtn = document.querySelector(".rules-btn");
+
+rulesBtn.addEventListener("click", OpenRules);
+
+//Audio
+
+  const audio = document.querySelector("#audio-slap");
+
+  audio.volume = 0.5;
+
+  function playAudio() {
+    audio.play();
+  };
+
+  btn.addEventListener("click", playAudio);
+
 //Card 1 Random letter and theme
 
 const letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -126,8 +162,6 @@ function randomizeTransform() {
 
 //Button Click Functions
 
-const btn = document.querySelector("button");
-
 btn.addEventListener("click", randomizeLetter);
 randomizeLetter();
 
@@ -149,27 +183,7 @@ randomizeTheme3();
 btn.addEventListener("click", randomizeTransform);
 randomizeTransform();
 
-// Close rules pop up
 
-function closeRules() {
-  let selectRules = document.querySelector(".rules-card");
-  selectRules.style.display = "none";
-}
-
-const crossBtn = document.querySelector(".cross");
-
-crossBtn.addEventListener("click", closeRules);
-
-//open rules
-
-function OpenRules() {
-  let selectRules = document.querySelector(".rules-card");
-  selectRules.style.display = "initial";
-}
-
-const rulesBtn = document.querySelector(".rules-btn");
-
-rulesBtn.addEventListener("click", OpenRules);
 
 // const randomLetter = Math.floor(Math.random() * 27);
 
