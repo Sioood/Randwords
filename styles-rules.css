@@ -95,5 +95,6 @@ a:nth-last-child(1) {
 @media screen and (max-width: 1000px){
   .rules-card {
     width: 40vh;
+    margin: 1vh 0 5vh 0;
   }
 }
