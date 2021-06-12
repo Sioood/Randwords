@@ -20,6 +20,15 @@ const rulesBtn = document.querySelector(".rules-btn");
 
 rulesBtn.addEventListener("click", OpenRules); */
 
+function OpenRules() {
+  let selectRules = document.querySelector(".rules-card");
+  selectRules.style.display = "initial";
+}
+
+const rulesBtn = document.querySelector(".rules-btn");
+
+rulesBtn.addEventListener("click", OpenRules);
+
 //cookie for popup rules
 
 const cookieRules = document.querySelector(".rules-card"),
@@ -38,6 +47,7 @@ const cookieRules = document.querySelector(".rules-card"),
     checkCookie != -1 ? cookieRules.style.display = "none" : cookieRules.style.display = "initial";
 
 const btn = document.querySelector("button");
+
 
 //Audio
 

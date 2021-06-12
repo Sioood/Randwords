@@ -27,6 +27,26 @@ const btnPlus = document.querySelector("#plus");
 const btnResult = document.querySelector("#result");
 let counter = Math.round(sessionStorage.getItem("counterSave"));
 
+btnMoins.addEventListener("click", () => {
+  counter--;
+  btnResult.innerText = counter;
+  sessionStorage.setItem("counterSave", `${counter}`);
+}
+);
+
+btnPlus.addEventListener("click", () => {
+  counter++;
+  btnResult.innerText = counter;
+  sessionStorage.setItem("counterSave", `${counter}`);
+});
+
+/* //compteur 1 + sessionStorage counter
+
+const btnMoins = document.querySelector("#moins");
+const btnPlus = document.querySelector("#plus");
+const btnResult = document.querySelector("#result");
+let counter = Math.round(sessionStorage.getItem("counterSave"));
+
 function moins() {
   counter--;
   btnResult.innerText = counter;
@@ -41,7 +61,7 @@ function plus() {
   sessionStorage.setItem("counterSave", `${counter}`);
 }
 
-btnPlus.addEventListener("click", plus);
+btnPlus.addEventListener("click", plus); */
 
 //compteur 2 + sessionStorage counter
 
