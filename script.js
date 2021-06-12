@@ -1,6 +1,4 @@
-const btn = document.querySelector("button");
-
-// Close rules pop up
+/* // Close rules pop up
 
 function closeRules() {
   let selectRules = document.querySelector(".rules-card");
@@ -20,7 +18,26 @@ function OpenRules() {
 
 const rulesBtn = document.querySelector(".rules-btn");
 
-rulesBtn.addEventListener("click", OpenRules);
+rulesBtn.addEventListener("click", OpenRules); */
+
+//cookie for popup rules
+
+const cookieRules = document.querySelector(".rules-card"),
+    crossBtn = cookieRules.querySelector(".cross");
+    crossBtn.onclick = ()=>{
+      //setting cookie for 1 month, after one month it'll be expired automatically
+      document.cookie = "CookieRules=Siod; max-age="+60*60*24*30;
+      if(document.cookie){ //if cookie is set
+        cookieRules.style.display = "none"; //hide cookie box
+      }else{ //if cookie not set then alert an error
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
+    }
+    let checkCookie = document.cookie.indexOf("CookieRules=Siod"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie != -1 ? cookieRules.style.display = "none" : cookieRules.style.display = "initial";
+
+const btn = document.querySelector("button");
 
 //Audio
 
