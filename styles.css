@@ -183,6 +183,7 @@ h3:nth-child(1) {
   min-width: 40px;
   height: 40px;
   margin: 0 1vh 6.5vh 1vh;
+  padding: 1vh;
   font-size: 1.5em;
   font-weight: 800;
   text-transform: uppercase;
