@@ -6,6 +6,7 @@
   opacity: 100%;
   font-family: "Rubik", sans-serif;
   text-decoration: none;
+  outline: none;
 }
 
 body {
@@ -160,6 +161,14 @@ h3:nth-child(1) {
   justify-content: space-around;
 }
 
+input{
+  max-width: 40px;
+  padding: 2px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
 .wrap-counter {
   display: flex;
   flex-direction: row;
@@ -192,6 +201,10 @@ h3:nth-child(1) {
   border: 3px solid #fff;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.reset:active {
+  transform: scale(0.9);
 }
 
 .wrap-counter button:nth-child(2n + 1) {
