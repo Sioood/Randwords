@@ -2,13 +2,9 @@
 
 window.onload = () => {
   if (counter == null) {
-    btnResult.innerText = 0;
-    btnResult1.innerText = 0;
-    btnResult2.innerText = 0;
-    btnResult3.innerText = 0;
-    btnResult4.innerText = 0;
-    btnResult5.innerText = 0;
-    btnResult6.innerText = 0;
+    document.querySelectorAll('.result').forEach((resetResultOnLoad) => {
+      resetResultOnLoad.innerText = 0;
+    });
   } else {
     btnResult.innerText = counter;
     btnResult1.innerText = counter1;
@@ -39,29 +35,6 @@ btnPlus.addEventListener("click", () => {
   btnResult.innerText = counter;
   sessionStorage.setItem("counterSave", `${counter}`);
 });
-
-/* //compteur 1 + sessionStorage counter
-
-const btnMoins = document.querySelector("#moins");
-const btnPlus = document.querySelector("#plus");
-const btnResult = document.querySelector("#result");
-let counter = Math.round(sessionStorage.getItem("counterSave"));
-
-function moins() {
-  counter--;
-  btnResult.innerText = counter;
-  sessionStorage.setItem("counterSave", `${counter}`);
-}
-
-btnMoins.addEventListener("click", moins);
-
-function plus() {
-  counter++;
-  btnResult.innerText = counter;
-  sessionStorage.setItem("counterSave", `${counter}`);
-}
-
-btnPlus.addEventListener("click", plus); */
 
 //compteur 2 + sessionStorage counter
 
@@ -205,7 +178,7 @@ btnPlus6.addEventListener("click", plus6);
 
 let reset = document.querySelector(".reset");
 
-reset.addEventListener("click", () =>{
+/* reset.addEventListener("click", () =>{
   counter = 0;
   btnResult.innerText = counter;
   sessionStorage.setItem("counterSave", `${counter}`);
@@ -233,7 +206,35 @@ reset.addEventListener("click", () =>{
   counter6 = 0;
   btnResult6.innerText = counter6;
   sessionStorage.setItem("counterSave6", `${counter6}`);
-})
+}) */
+
+reset.addEventListener("click", () =>{
+document.querySelectorAll('.result').forEach((resetResult) => {
+  resetResult.innerText = 0;
+  
+  counter = 0;
+  sessionStorage.setItem("counterSave", `${counter}`);
+
+  counter1 = 0;
+  sessionStorage.setItem("counterSave1", `${counter1}`);
+
+  counter2 = 0;
+  sessionStorage.setItem("counterSave2", `${counter2}`);
+
+  counter3 = 0;
+  sessionStorage.setItem("counterSave3", `${counter3}`);
+
+  counter4 = 0;
+  sessionStorage.setItem("counterSave4", `${counter4}`);
+
+  counter5 = 0;
+  sessionStorage.setItem("counterSave5", `${counter5}`);
+
+  counter6 = 0;
+  sessionStorage.setItem("counterSave6", `${counter6}`);
+});
+});
+
 
 /* // compteur sans session storage
 
