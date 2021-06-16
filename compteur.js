@@ -176,7 +176,7 @@ btnPlus6.addEventListener("click", plus6);
 
 //button reset all counters
 
-let reset = document.querySelector(".reset");
+
 
 /* reset.addEventListener("click", () =>{
   counter = 0;
@@ -207,6 +207,8 @@ let reset = document.querySelector(".reset");
   btnResult6.innerText = counter6;
   sessionStorage.setItem("counterSave6", `${counter6}`);
 }) */
+
+let reset = document.querySelector(".reset");
 
 reset.addEventListener("click", () =>{
 document.querySelectorAll('.result').forEach((resetResult) => {

@@ -185,7 +185,7 @@ function randomizeTransform() {
 
   let randomTransform3 = document.querySelector("#card2");
   randomTransform3.style.transform = `${transform[randomizeTransform]}`;
-}
+};
 
 //Button Click Functions
 
